@@ -1,3 +1,92 @@
 :root {
-    
+    --white: white;
+    --blue: blue;
+    --aqua: rgb(108, 108, 226);
+    --grey: rgb(94, 91, 91);
 }
+
+body {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    font-size: large;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--grey);
+}
+
+h1, h2, h3, h5 {
+    font-size: 32px;
+    text-align: left;
+}
+
+h1 {
+    background-color: darkcyan;
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 48px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style: none;
+    text-align: -webkit-any-link;
+}
+
+nav a {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: right;
+    width: 960px;
+}
+
+ .pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 650px;
+    margin: 0 auto 15px auto;
+    width: 90%
+}
+
+.card-one a {
+    display: inline-block;
+    justify-content: left;
+}
+
+footer {
+    background-color: var(--grey);
+}
+footer li, footer a {
+    display: inline;
+    list-style-type: none;
+    background-color: darkcyan;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
